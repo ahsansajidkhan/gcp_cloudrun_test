@@ -1,4 +1,4 @@
-name: V1_Manual Deploy to Cloud Run
+name: Manual Deploy to Cloud Run
 
 on:
   workflow_dispatch:
@@ -60,11 +60,8 @@ jobs:
       # --------------------------
       - name: Deploy to Cloud Run
         run: |
-          SERVICE_NAME="${{ secrets.SERVICE_NAME }}"
-          if [ -z "$SERVICE_NAME" ]; then
-            echo "SERVICE_NAME secret is not set. Exiting."
-            exit 1
-          fi
+          # Manually set the Cloud Run service name
+          SERVICE_NAME="my-cloud-run-app"
 
           echo "Deploying $SERVICE_NAME to Cloud Run"
           gcloud run deploy "$SERVICE_NAME" \
@@ -79,7 +76,7 @@ jobs:
       # --------------------------
       - name: Output Cloud Run URL
         run: |
-          SERVICE_NAME="${{ secrets.SERVICE_NAME }}"
+          SERVICE_NAME="my_test"
           URL=$(gcloud run services describe "$SERVICE_NAME" \
             --region us-central1 \
             --format='value(status.url)')
