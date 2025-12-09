@@ -1,4 +1,4 @@
-name: V1_Manual Deploy to Cloud Run
+name: BR_Manual Deploy to Cloud Run
 
 on:
   push:
