@@ -8,28 +8,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout source code
+      # --------------------------
+      # Checkout source code
+      # --------------------------
+      - name: Checkout code
         uses: actions/checkout@v4
 
       # --------------------------
-      # Authenticate to Google Cloud
+      # Authenticate with GCP
       # --------------------------
-      - name: Authenticate to GCP
+      - name: Authenticate to Google Cloud
         uses: google-github-actions/auth@v2
         with:
           credentials_json: ${{ secrets.GCP_SA_KEY }}
 
       # --------------------------
-      # Install gcloud CLI
+      # Install gcloud
       # --------------------------
       - name: Install gcloud CLI
         uses: google-github-actions/setup-gcloud@v2
         with:
           project_id: ${{ secrets.GCP_PROJECT_ID }}
-          version: latest
 
       # --------------------------
-      # Configure Docker for Artifact Registry
+      # Configure Docker with Artifact Registry
       # --------------------------
       - name: Configure Docker for Artifact Registry
         run: |
@@ -42,18 +44,20 @@ jobs:
         run: |
           IMAGE="us-central1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/cloud-run-repo/${{ secrets.SERVICE_NAME }}:latest"
           echo "IMAGE=$IMAGE" >> $GITHUB_ENV
+          echo "Building image: $IMAGE"
           docker build -t "$IMAGE" .
 
       # --------------------------
       # Push Docker image
       # --------------------------
       - name: Push Docker image
-        run: docker push "$IMAGE"
+        run: |
+          docker push "$IMAGE"
 
       # --------------------------
-      # Deploy Cloud Run service
+      # Deploy to Cloud Run
       # --------------------------
-      - name: Deploy to Cloud Run
+      - name: Deploy Cloud Run Service
         run: |
           gcloud run deploy ${{ secrets.SERVICE_NAME }} \
             --image "$IMAGE" \
@@ -65,10 +69,9 @@ jobs:
       # --------------------------
       # Output Cloud Run URL
       # --------------------------
-      - name: Print Cloud Run URL
+      - name: Output Cloud Run URL
         run: |
           URL=$(gcloud run services describe ${{ secrets.SERVICE_NAME }} \
             --region us-central1 \
             --format='value(status.url)')
           echo "Cloud Run URL: $URL"
-          echo "CLOUD_RUN_URL=$URL" >> $GITHUB_ENV
