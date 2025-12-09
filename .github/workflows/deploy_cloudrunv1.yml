@@ -1,4 +1,4 @@
-name: Manual Deploy to Cloud Run-1
+name: Manual Deploy to Cloud Run
 
 on:
   workflow_dispatch:
@@ -15,9 +15,9 @@ jobs:
         uses: actions/checkout@v4
 
       # --------------------------
-      # Authenticate with GCP
+      # Authenticate to Google Cloud
       # --------------------------
-      - name: Authenticate to Google Cloud
+      - name: Authenticate to GCP
         uses: google-github-actions/auth@v2
         with:
           credentials_json: ${{ secrets.GCP_SA_KEY }}
@@ -25,30 +25,15 @@ jobs:
       # --------------------------
       # Install gcloud CLI
       # --------------------------
-      - name: Install gcloud CLI
+      - name: Setup gcloud CLI
         uses: google-github-actions/setup-gcloud@v2
         with:
           project_id: ${{ secrets.GCP_PROJECT_ID }}
 
       # --------------------------
-      # Verify Artifact Registry Repository Exists
-      # --------------------------
-      - name: Check Artifact Registry repository
-        run: |
-          if ! gcloud artifacts repositories describe cloud-run-repo --location=us-central1; then
-            echo "Repository cloud-run-repo not found. Creating..."
-            gcloud artifacts repositories create cloud-run-repo \
-              --repository-format=docker \
-              --location=us-central1 \
-              --description="Cloud Run Docker repository"
-          else
-            echo "Repository exists."
-          fi
-
-      # --------------------------
       # Configure Docker for Artifact Registry
       # --------------------------
-      - name: Configure Docker for Artifact Registry
+      - name: Configure Docker
         run: |
           gcloud auth configure-docker us-central1-docker.pkg.dev --quiet
 
@@ -59,7 +44,7 @@ jobs:
         run: |
           IMAGE="us-central1-docker.pkg.dev/certain-sky-479419-n4/cloud-run-repo/app:latest"
           echo "IMAGE=$IMAGE" >> $GITHUB_ENV
-          echo "Building image: $IMAGE"
+          echo "Building Docker image: $IMAGE"
           docker build -t "$IMAGE" .
 
       # --------------------------
@@ -67,14 +52,22 @@ jobs:
       # --------------------------
       - name: Push Docker image
         run: |
+          echo "Pushing Docker image: $IMAGE"
           docker push "$IMAGE"
 
       # --------------------------
       # Deploy to Cloud Run
       # --------------------------
-      - name: Deploy Cloud Run Service
+      - name: Deploy to Cloud Run
         run: |
-          gcloud run deploy ${{ secrets.SERVICE_NAME }} \
+          SERVICE_NAME="${{ secrets.SERVICE_NAME }}"
+          if [ -z "$SERVICE_NAME" ]; then
+            echo "SERVICE_NAME secret is not set. Exiting."
+            exit 1
+          fi
+
+          echo "Deploying $SERVICE_NAME to Cloud Run"
+          gcloud run deploy "$SERVICE_NAME" \
             --image "$IMAGE" \
             --region us-central1 \
             --platform managed \
@@ -86,7 +79,8 @@ jobs:
       # --------------------------
       - name: Output Cloud Run URL
         run: |
-          URL=$(gcloud run services describe ${{ secrets.SERVICE_NAME }} \
+          SERVICE_NAME="${{ secrets.SERVICE_NAME }}"
+          URL=$(gcloud run services describe "$SERVICE_NAME" \
             --region us-central1 \
             --format='value(status.url)')
           echo "Cloud Run URL: $URL"
