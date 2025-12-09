@@ -76,7 +76,7 @@ jobs:
       # --------------------------
       - name: Output Cloud Run URL
         run: |
-          SERVICE_NAME="mytest"
+          SERVICE_NAME="my-cloud-run-app"
           URL=$(gcloud run services describe "$SERVICE_NAME" \
             --region us-central1 \
             --format='value(status.url)')
