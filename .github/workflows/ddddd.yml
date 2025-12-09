@@ -1,4 +1,4 @@
-name: BR_Manual Deploy to Cloud Run
+name: DDD
 
 on:
   push:
