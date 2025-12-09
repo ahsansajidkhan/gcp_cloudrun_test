@@ -1,6 +1,9 @@
 name: V1_Manual Deploy to Cloud Run
 
 on:
+  push:
+    branches:
+      - "**"
   workflow_dispatch:
 
 jobs:
