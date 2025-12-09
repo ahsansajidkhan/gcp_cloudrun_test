@@ -1,77 +1,48 @@
-name: Manual Deploy to Cloud Run
+name: Deploy to Cloud Run
 
 on:
-  workflow_dispatch:
+  push:
+    branches: ["main"]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read
+      id-token: write
+
     steps:
-      # --------------------------
-      # Checkout source code
-      # --------------------------
-      - name: Checkout code
-        uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
 
-      # --------------------------
-      # Authenticate with GCP
-      # --------------------------
-      - name: Authenticate to Google Cloud
-        uses: google-github-actions/auth@v2
-        with:
-          credentials_json: ${{ secrets.GCP_SA_KEY }}
+    - name: Authenticate to Google Cloud
+      id: auth
+      uses: google-github-actions/auth@v2
+      with:
+        workload_identity_provider: "projects/1002195286812/locations/global/workloadIdentityPools/github/providers/my-repo"
+        service_account: "my-repo-service-account@certain-sky-479419-n4.iam.gserviceaccount.com"
 
-      # --------------------------
-      # Install gcloud
-      # --------------------------
-      - name: Install gcloud CLI
-        uses: google-github-actions/setup-gcloud@v2
-        with:
-          project_id: ${{ secrets.GCP_PROJECT_ID }}
+    - name: Set up Google Cloud SDK
+      uses: google-github-actions/setup-gcloud@v2
 
-      # --------------------------
-      # Configure Docker with Artifact Registry
-      # --------------------------
-      - name: Configure Docker for Artifact Registry
-        run: |
-          gcloud auth configure-docker us-central1-docker.pkg.dev --quiet
+    - name: Configure Docker to use gcloud
+      run: gcloud auth configure-docker us-central1-docker.pkg.dev
 
-      # --------------------------
-      # Build Docker image
-      # --------------------------
-      - name: Build Docker image
-        run: |
-          IMAGE="us-central1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/cloud-run-repo/${{ secrets.SERVICE_NAME }}:latest"
-          echo "IMAGE=$IMAGE" >> $GITHUB_ENV
-          echo "Building image: $IMAGE"
-          docker build -t "$IMAGE" .
+    - name: Build & Push Docker Image
+      run: |
+        IMAGE="us-central1-docker.pkg.dev/certain-sky-479419-n4/cloud-run-repo/app:latest"
+        echo "IMAGE=$IMAGE" >> $GITHUB_ENV
+        echo "Building image: $IMAGE"
+        docker build -t "$IMAGE" .
+        docker push "$IMAGE"
 
-      # --------------------------
-      # Push Docker image
-      # --------------------------
-      - name: Push Docker image
-        run: |
-          docker push "$IMAGE"
-
-      # --------------------------
-      # Deploy to Cloud Run
-      # --------------------------
-      - name: Deploy Cloud Run Service
-        run: |
-          gcloud run deploy ${{ secrets.SERVICE_NAME }} \
-            --image "$IMAGE" \
-            --region us-central1 \
-            --platform managed \
-            --allow-unauthenticated \
-            --memory 512Mi
-
-      # --------------------------
-      # Output Cloud Run URL
-      # --------------------------
-      - name: Output Cloud Run URL
-        run: |
-          URL=$(gcloud run services describe ${{ secrets.SERVICE_NAME }} \
-            --region us-central1 \
-            --format='value(status.url)')
-          echo "Cloud Run URL: $URL"
+    - name: Deploy to Cloud Run
+      run: |
+        gcloud run deploy my-cloudrun-service \
+          --image "$IMAGE" \
+          --region us-central1 \
+          --platform managed \
+          --allow-unauthenticated \
+          --memory 1Gi \
+          --timeout 300
