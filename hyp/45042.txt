@@ -1,0 +1,186 @@
+[0.14 - 0.32] SPEAKER_02: Hello? 
+[1.22 - 2.14] SPEAKER_02: Yeah, Mazel Tov. 
+[2.56 - 3.66] SPEAKER_02: Last night was his art. 
+[4.02 - 23.24] SPEAKER_02: So, Wednesday night is the... 
+[23.32 - 24.82] SPEAKER_03: You could come in? 
+[25.30 - 31.08] SPEAKER_03: I have to fix the time, because I haven't arrived with someone. 
+[31.14 - 36.74] SPEAKER_03: And he told me that he's gonna pass on my role. 
+[36.82 - 40.22] SPEAKER_03: He could pick up after. 
+[40.26 - 41.98] SPEAKER_03: Okay, one second. 
+[42.16 - 42.72] SPEAKER_03: Is Ryan? 
+[43.26 - 43.32] SPEAKER_03: Yeah. 
+[43.36 - 45.04] SPEAKER_03: I don't see you. 
+[45.08 - 45.14] SPEAKER_01: Yeah. 
+[45.18 - 46.66] SPEAKER_01: Mazel tov, Mazel tov, samyose. 
+[46.70 - 46.84] SPEAKER_01: Samyose. 
+[47.62 - 48.16] SPEAKER_01: How's everything? 
+[49.28 - 53.52] SPEAKER_01: I'm ready to call you and then you called. 
+[57.58 - 58.06] SPEAKER_01: What's doing? 
+[58.98 - 59.38] SPEAKER_01: How's everything? 
+[59.44 - 59.82] SPEAKER_01: Dan Camp? 
+[59.86 - 60.66] SPEAKER_01: Great. 
+[60.72 - 61.14] SPEAKER_01: Are you learning? 
+[61.18 - 61.82] SPEAKER_01: Good. 
+[61.86 - 62.30] SPEAKER_01: Learning good? 
+[62.36 - 62.60] SPEAKER_01: Yeah. 
+[62.98 - 63.88] SPEAKER_01: Did you get any of my letters? 
+[63.92 - 64.82] SPEAKER_01: What? 
+[64.86 - 66.10] SPEAKER_01: Did you get my suntan lotion? 
+[66.64 - 66.72] SPEAKER_01: No. 
+[67.16 - 67.22] SPEAKER_01: No? 
+[68.60 - 68.68] SPEAKER_01: No. 
+[68.76 - 69.58] SPEAKER_01: I left it by Ry. 
+[71.26 - 71.82] SPEAKER_01: Probably didn't see it. 
+[71.86 - 72.70] SPEAKER_01: I left it hanging on his door. 
+[72.74 - 73.20] SPEAKER_01: He wasn't home. 
+[73.28 - 74.50] SPEAKER_01: I wanted to bring it to his son. 
+[75.98 - 76.58] SPEAKER_01: He didn't give it to you. 
+[76.62 - 81.48] SPEAKER_01: Yeah, he went into the city two days ago. 
+[81.52 - 81.56] SPEAKER_01: Who? 
+[81.60 - 81.62] SPEAKER_01: Ry. 
+[81.66 - 82.06] SPEAKER_01: Come back? 
+[82.10 - 83.10] SPEAKER_01: I don't know. 
+[83.14 - 84.98] SPEAKER_00: He probably didn't come back yet. 
+[85.02 - 85.04] SPEAKER_01: Ah. 
+[85.62 - 88.14] SPEAKER_01: This was like a week before Tisha Buff. 
+[88.18 - 90.92] SPEAKER_01: I'm going to find out what happened and I'll have to call him. 
+[90.96 - 91.42] SPEAKER_01: I'll find out. 
+[91.46 - 91.90] SPEAKER_01: What's doing there? 
+[91.94 - 93.58] SPEAKER_01: Are you going to be able to come home? 
+[95.60 - 114.04] SPEAKER_01: I got a rabbi's going in tomorrow at 1 o'clock. 
+[114.08 - 117.14] SPEAKER_01: And I asked him if he has rooms. 
+[117.18 - 133.66] SPEAKER_01: He said he's going to have a 13 year old girl in the back. 
+[138.04 - 142.84] SPEAKER_01: If it's up to you, if you don't want that I sit in the back seat with her, then I can go. 
+[147.02 - 147.56] SPEAKER_01: If not, then I can't go. 
+[147.62 - 147.98] SPEAKER_01: It's no problem. 
+[148.24 - 149.82] SPEAKER_01: Just her's gonna be there. 
+[149.86 - 150.42] SPEAKER_01: Just she's gonna be there. 
+[150.50 - 159.24] SPEAKER_01: Okay, so you put the bag in the middle and that's all. 
+[159.58 - 161.10] SPEAKER_01: And then there's gonna be a lot of people in the front. 
+[161.14 - 163.10] SPEAKER_01: And then I asked him if he could pick her up. 
+[163.18 - 167.78] SPEAKER_01: So he said he could pick her up if she weighs like on the roll or whatever. 
+[167.88 - 170.80] SPEAKER_01: And then she could sit in between the girl and me. 
+[170.94 - 174.98] SPEAKER_00: I don't know how. 
+[175.02 - 175.18] SPEAKER_00: Huh? 
+[175.32 - 177.60] SPEAKER_01: How could you wear it on the road, I mean? 
+[177.64 - 178.40] SPEAKER_01: What's our calling card number? 
+[178.48 - 179.22] SPEAKER_01: I'll call Esther now. 
+[179.26 - 181.80] SPEAKER_00: What calling card number? 
+[181.92 - 183.22] SPEAKER_00: Esther's calling card. 
+[183.28 - 185.54] SPEAKER_00: What do you mean, Esther doesn't have a calling card? 
+[185.58 - 198.18] SPEAKER_01: Oh yeah, whatever, we call certain times. 
+[198.22 - 198.68] SPEAKER_01: I know what you mean. 
+[198.80 - 211.88] SPEAKER_01: She told me Esther sent her this calling card. 
+[211.94 - 218.16] SPEAKER_01: Oh yeah, I sent Esther a calling card, but she has the number, she has it, I don't know. 
+[218.20 - 220.10] SPEAKER_01: What are you here for? 
+[220.56 - 225.22] SPEAKER_01: I want to call Esther now. 
+[225.26 - 227.70] SPEAKER_01: Oh, you want to call her a card? 
+[227.82 - 227.88] SPEAKER_01: Yeah. 
+[228.06 - 231.54] SPEAKER_01: Let me see, maybe I wrote down the number here. 
+[231.88 - 232.56] SPEAKER_01: Uh, you have a pen? 
+[232.60 - 233.00] SPEAKER_01: I don't know. 
+[233.08 - 233.80] SPEAKER_01: I have her telephone number. 
+[233.84 - 235.28] SPEAKER_01: I understand, but you need a whole bunch of numbers. 
+[235.32 - 236.18] SPEAKER_01: You have to have a pen. 
+[236.24 - 236.26] SPEAKER_01: Oh. 
+[236.30 - 236.68] SPEAKER_01: You have a pen? 
+[236.72 - 237.30] SPEAKER_01: I'll probably get one. 
+[237.34 - 237.52] SPEAKER_01: One minute. 
+[237.60 - 238.16] SPEAKER_01: How fierce can you get one? 
+[238.20 - 238.96] SPEAKER_01: If you can get a pen, get a pen. 
+[239.00 - 239.22] SPEAKER_01: I don't know. 
+[239.26 - 239.90] SPEAKER_01: I don't see the number anyway. 
+[239.98 - 242.70] SPEAKER_01: I don't see it yet. 
+[242.78 - 243.08] SPEAKER_01: I don't know. 
+[243.12 - 243.88] SPEAKER_01: I wrote it down someplace. 
+[243.98 - 246.12] SPEAKER_01: I don't know where I wrote it. 
+[246.16 - 246.92] SPEAKER_01: Maybe this is it. 
+[247.00 - 256.42] SPEAKER_01: I have to get a pen, but I don't know anyway. 
+[258.56 - 259.66] SPEAKER_01: Oh, maybe this is it. 
+[260.18 - 265.68] SPEAKER_01: Yeah, I have it. 
+[266.22 - 266.40] SPEAKER_01: Yeah. 
+[267.24 - 267.84] SPEAKER_01: OK, you do like this. 
+[267.88 - 268.06] SPEAKER_01: You dial 1-800. 
+[268.06 - 280.44] SPEAKER_01: 626-3998 and then you'll hear a voice tone. 
+[280.48 - 298.32] SPEAKER_01: it'll say put in your code number it's 628-925-2789 and then and then you'll hear a voice tone. 
+[298.36 - 299.82] SPEAKER_01: it'll say dial the number. 
+[300.78 - 301.94] SPEAKER_01: Dial your number that you're calling. 
+[301.98 - 303.58] SPEAKER_01: Yeah, you just dial her number. 
+[308.20 - 309.08] SPEAKER_01: I don't know what her number is. 
+[309.26 - 309.88] SPEAKER_01: you want to know her number. 
+[310.04 - 314.94] SPEAKER_01: Oh Yeah, okay, but I don't think it's a good idea that you should wait by the road. 
+[314.98 - 315.72] SPEAKER_01: it's not a good idea. 
+[316.16 - 316.84] SPEAKER_01: It's not a good idea. 
+[316.92 - 317.78] SPEAKER_01: She should wait by the road. 
+[317.84 - 322.72] SPEAKER_01: Let her get her own ride home because She can't know when he's gonna come and it's just I can't it away. 
+[322.76 - 338.02] SPEAKER_01: You have to wait on the 17 He'll go into the into the Monroe? 
+[338.06 - 339.92] SPEAKER_01: He told me to... He's passing my Monroe anyway, it's on the way. 
+[339.96 - 341.32] SPEAKER_01: Yeah, nah, it's out of the way, nah. 
+[341.36 - 343.16] SPEAKER_01: I just went to Monroe, it's out of the way. 
+[343.32 - 345.38] SPEAKER_01: You have to... Bungalow County is fucking crocking completely. 
+[346.10 - 351.14] SPEAKER_01: And even to go into Monroe, to go off the highway to go into Monroe is out of the way. 
+[351.18 - 352.68] SPEAKER_01: You can't be matriarch to somebody to do that. 
+[352.72 - 354.72] SPEAKER_01: He's doing you a favor enough, he's taking you home. 
+[355.04 - 356.22] SPEAKER_01: Don't be matriarch to him any further. 
+[356.98 - 359.06] SPEAKER_01: He just... One minute. 
+[363.32 - 363.82] SPEAKER_01: You just tell her. 
+[363.88 - 365.00] SPEAKER_01: Tati said you should not do it. 
+[367.06 - 370.00] SPEAKER_01: Tell her to find her own ride or she should take a bus so she can get ready to find an extra. 
+[370.04 - 373.12] SPEAKER_01: There's plenty of people in Satma town who are going in. 
+[373.24 - 374.82] SPEAKER_01: She could start working on it today. 
+[374.86 - 375.84] SPEAKER_01: She should be here tomorrow. 
+[376.62 - 376.80] SPEAKER_01: Okay? 
+[376.88 - 380.22] SPEAKER_01: She has any troubles, she should call me, but I don't want her to... don't even ask this guy. 
+[380.88 - 381.84] SPEAKER_01: It's not a nice thing to do. 
+[382.66 - 384.22] SPEAKER_01: Well, just un-ask him. 
+[384.32 - 384.88] SPEAKER_01: Tell him it's on the gate. 
+[384.92 - 385.86] SPEAKER_01: Tell him you spoke to your father. 
+[386.26 - 392.18] SPEAKER_01: And he said, right, if you sit next to his daughter in the back, you put up a bag or a box or something in the middle, that's no problem. 
+[392.58 - 394.58] SPEAKER_01: And you just don't want him to pick up after that. 
+[394.82 - 396.06] SPEAKER_01: You can give him a triag somebody. 
+[396.10 - 396.86] SPEAKER_01: I can give him a triag somebody. 
+[397.08 - 398.12] SPEAKER_01: It's not on the road. 
+[398.16 - 399.36] SPEAKER_01: It's not a bungkang right off the road. 
+[399.84 - 402.54] SPEAKER_01: It took us an hour to find S's bungkang once we were in Monroe. 
+[403.16 - 403.72] SPEAKER_01: It took us an hour. 
+[404.62 - 405.60] SPEAKER_01: It's a crock in the place. 
+[405.96 - 406.94] SPEAKER_01: So tell S to forget about that. 
+[406.98 - 407.86] SPEAKER_01: She should find her own way home. 
+[407.90 - 408.80] SPEAKER_01: If she can't, she should call me. 
+[409.20 - 409.30] SPEAKER_00: OK. 
+[409.88 - 413.62] SPEAKER_01: Okay, so then we'll see you What. 
+[415.74 - 416.98] SPEAKER_01: Yeah, she finds out to come over. 
+[417.04 - 421.30] SPEAKER_01: she has any problem today that I call me all right, so you'll be home around 334. 
+[423.88 - 424.44] SPEAKER_01: He's coming to bar. 
+[424.50 - 424.68] SPEAKER_01: pop. 
+[427.98 - 434.54] SPEAKER_01: Okay, very good anything anything you take care of few things when you come home, maybe you have time your glasses broke. 
+[434.70 - 445.32] SPEAKER_01: what happened? 
+[445.54 - 446.76] SPEAKER_01: I mean, you could just get a new handle. 
+[446.80 - 448.46] SPEAKER_01: Someone said he may fix it. 
+[448.50 - 449.94] SPEAKER_01: He has a whole kit over here. 
+[449.98 - 451.52] SPEAKER_01: He said I should give it to him later. 
+[451.58 - 452.24] SPEAKER_01: He said maybe he could fix it. 
+[452.30 - 454.46] SPEAKER_01: If not, I'll just call him in and say I've got a new handle. 
+[454.50 - 454.62] SPEAKER_01: Uh-huh. 
+[454.66 - 454.72] SPEAKER_01: Okay. 
+[454.76 - 455.24] SPEAKER_01: Bring all the parts home. 
+[455.28 - 455.42] SPEAKER_01: Yeah. 
+[455.46 - 456.08] SPEAKER_01: Okay, you know what I'm saying? 
+[456.12 - 456.20] SPEAKER_01: Okay. 
+[456.24 - 457.52] SPEAKER_01: Okay, so we'll see you, Mr. 
+[457.58 - 457.90] SPEAKER_01: Shem, tomorrow, Mr. 
+[457.96 - 458.12] SPEAKER_01: Shem, okay? 
+[458.16 - 458.54] SPEAKER_01: Uh, where's the vault? 
+[458.58 - 459.56] SPEAKER_00: The vault is in Flapper Street, East 17th Street. 
+[459.62 - 459.72] SPEAKER_00: A hole? 
+[459.76 - 460.22] SPEAKER_00: Yeah, a hole in the shul. 
+[460.26 - 460.84] SPEAKER_00: And, uh, the L'chaim was nice. 
+[460.88 - 461.38] SPEAKER_01: L'chaim's beautiful. 
+[461.42 - 462.02] SPEAKER_01: We have pictures. 
+[462.06 - 462.78] SPEAKER_01: They took pictures, huh? 
+[462.82 - 464.32] SPEAKER_01: Where is it by then? 
+[464.50 - 465.66] SPEAKER_01: Yeah, I'll tell you everything when you come home. 
+[465.82 - 465.94] SPEAKER_01: Okay. 
+[466.52 - 466.84] SPEAKER_01: Okay. 
+[467.26 - 467.64] SPEAKER_01: Thank you so much. 
+[467.68 - 470.66] SPEAKER_01: Looking forward to seeing you. 

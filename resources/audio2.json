@@ -1,0 +1,10 @@
+{
+  "cpu_percent": 30.0,
+  "memory_mb": 700,
+  "latency_ms": 1600,
+  "duration_s": 3.0,
+  "cpu": {"avg": 30.0},
+  "memory": {"avg": 700},
+  "gpu": {"avg": 0}
+}
+
