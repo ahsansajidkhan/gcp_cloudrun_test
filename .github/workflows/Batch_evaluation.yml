@@ -28,7 +28,7 @@ jobs:
       - name: Run batch evaluation
         working-directory: ${{ github.workspace }}
         run: |
-          python -m evaluation.batch_evaluation_with_resources hyp ref results resources
+          python -m evaluation.batch_evaluate_with_resources hyp ref results resources
 
       # Step 5: Upload results as artifact
       - name: Upload results
