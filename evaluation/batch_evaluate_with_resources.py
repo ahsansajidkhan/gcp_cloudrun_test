@@ -6,7 +6,7 @@ from datetime import datetime
 from typing import Optional, Dict, List
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from evaluation.evaluate import (
+from .evaluate import (
     read_text_from_path,
     save_result_to_path,
     is_diarized_timestamp_format,
