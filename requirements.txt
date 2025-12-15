@@ -6,3 +6,4 @@ pydantic==2.11.7
 nltk==3.9.1
 wget==3.2
 omegaconf==2.3.0
+jiwer==3.0.4
