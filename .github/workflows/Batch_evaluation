@@ -1,0 +1,37 @@
+name: Batch Evaluation
+
+on:
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  run-batch-eval:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repo
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Step 2: Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11" # or whichever version you need
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # Step 4: Run the batch evaluation
+      - name: Run batch evaluation
+        run: |
+          python batch_evaluation_with_resources.py hyp ref results resources
+
+      # Step 5: Upload results as artifact
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: batch-evaluation-results
+          path: results/
