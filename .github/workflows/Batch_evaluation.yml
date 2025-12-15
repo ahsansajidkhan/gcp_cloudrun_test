@@ -27,7 +27,7 @@ jobs:
       # Step 4: Run the batch evaluation
       - name: Run batch evaluation
         run: |
-          python -m evaluation.batch_evaluation_with_resources hyp ref results resources
+          python -m evaluation.batch_evaluation_with_resources.py hyp ref results resources
 
       # Step 5: Upload results as artifact
       - name: Upload results
